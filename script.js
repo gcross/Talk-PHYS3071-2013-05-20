@@ -2,6 +2,7 @@ headings = [ // {{{
     "Approximating Equations",
     "Strategy",
     "Schrodinger's Equation with a Twist",
+    "Elemental Functions",
 ] // }}}
 
 script = function(){ return [ // {{{
@@ -101,5 +102,45 @@ script = function(){ return [ // {{{
     "",
     hireAndFadeIn(0.5,"nlse_next_3"),
     "",
+    fadeOutAndFire(0.5,
+        "nlse_schro",
+        "nlse_schro_complex",
+        "nlse_schro_V",
+        "nlse_schro_nonlinear",
+        "nlse_what_next_bar",
+        "nlse_next_1",
+        "nlse_next_2",
+        "nlse_next_3"
+    ),
+    // }}}
+    // Elemental {{{
+    rotateNextHeading(),
+    hireAndFadeInUseActors(0.5,"elemental_bar_1","elemental_bar_2"),
+    "",
+    hireAndFadeIn(0.5,"elemental_1"),
+    "",
+    hireAndFadeIn(0.5,"elemental_2"),
+    "",
+    hireAndFadeIn(0.5,"elemental_highlight"),
+    "",
+    hireAndFadeIn(0.5,"elemental_3"),
+    "",
+    fadeOutAndFire(0.5,
+        "elemental_bar_1",
+        "elemental_bar_2",
+        "elemental_1",
+        "elemental_2",
+        "elemental_3",
+        "elemental_highlight"
+    ),
+    hireAndFadeIn(0.5,"elemental2_bar"),
+    "",
+    hireAndFadeIn(0.5,"elemental2_1"),
+    "",
+    hireAndFadeIn(0.5,"elemental2_2"),
+    "",
+    hireAndFadeIn(0.5,"elemental2_3"),
+    "",
+    hireAndFadeIn(0.5,"elemental2_3_highlight"),
     // }}}
 ]} // }}}
